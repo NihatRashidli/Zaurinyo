@@ -1,0 +1,39 @@
+.mycard {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 16px auto; /* Centers the card if in a flex or block layout */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #f9f9f9; /* Light background for contrast */
+
+}
+
+.mycard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mycard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.mycard-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.mycard-content p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.mycard-content p:last-child {
+    font-weight: bold;
+    color: #007bff;
+}

@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "e791",
+      "name": "Nihat",
+      "surname": "Rashidli",
+      "username": "rashinvate",
+      "email": "nihatresidli36@gmail.com",
+      "password": "3427172n",
+      "confirmPassword": "3427172n",
+      "isLogin": true
+    },
+    {
+      "id": "a21c",
+      "name": "Nihat",
+      "surname": "Rashidli",
+      "username": "rash",
+      "email": "nihatresidli@gmail.com",
+      "password": "3427172n",
+      "confirmPassword": "3427172n"
+    }
+  ]
+}
