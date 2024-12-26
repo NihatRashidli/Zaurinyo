@@ -1,0 +1,140 @@
+.products {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.cart img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.content p {
+    margin: 5px 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.modal .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.modal .button button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal .button button:hover {
+    background-color: #0056b3;
+}
+
+.modal .button p {
+    margin: 0 10px;
+}
+
+.modal button {
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal button:hover {
+    background-color: #c82333;
+}
+
+
+
+
+.basket {
+    padding: 20px;
+    text-align: center;
+}
+
+.basket h2 {
+    margin-bottom: 20px;
+}
+
+.basket ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.basket-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.basket-item img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.item-details {
+    text-align: left;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
