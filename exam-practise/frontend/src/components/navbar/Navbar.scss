@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+
+  .navbar-list {
+    display: flex;
+    gap: 10px;
+  }
+  .navbar-logo {
+    font-weight: bold;
+    color: #e49503;
+    font-size: 24px;
+  }
+  li {
+    list-style: none;
+
+    a {
+      color: #333;
+      text-decoration: none;
+      &:hover {
+        color: #e49503;
+      }
+    }
+  }
+  .wrapper{
+    font-size: 20px;
+    margin: 0;
+  }
+}

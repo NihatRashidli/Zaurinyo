@@ -1,0 +1,17 @@
+.banner {
+  display: flex;
+  gap: 20px;
+  margin: 50px 0 100px 0;
+  .photo-section {
+    position: relative;
+  }
+  .photo-text {
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    background-color: white;
+    padding: 20px 50px;
+    font-weight: bold;
+font-size: 18px;
+  }
+}
