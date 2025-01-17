@@ -1,0 +1,14 @@
+.full-get{
+    position: relative;
+    img{
+        max-width: 100%;
+    }
+    .div-content{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        display: flex;
+        align-items: center;
+        gap: 150px;
+    }
+}

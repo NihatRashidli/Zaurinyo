@@ -1,0 +1,17 @@
+.footer {
+  padding: 40px;
+
+  li {
+    list-style: none;
+    line-height: 26px;
+  }
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+}
+}

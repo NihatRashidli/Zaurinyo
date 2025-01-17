@@ -1,0 +1,34 @@
+.hero {
+  background-color: rgb(31, 212, 203);
+  height: 700px;
+  .image {
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    h1 {
+      font-size: 52px;
+      margin: 0;
+    }
+    h6 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .shopnow {
+      width: 150px;
+      margin-top: 30px;
+      border-radius: 40px;
+    }
+  }
+}

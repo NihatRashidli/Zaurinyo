@@ -4,7 +4,7 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="fixed-top bg-light">
       <div className="container">
         <div className="nav">
           <div className="navbar-logo">COLOSHOP</div>
