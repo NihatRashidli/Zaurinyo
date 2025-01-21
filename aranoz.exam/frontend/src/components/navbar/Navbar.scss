@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  .wrapper{
+    font-size: 18px;
+  }
+  .logo {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .nav-list {
+    display: flex;
+    gap: 10px;
+    margin:0 40px;
+    padding: 0;
+
+    li {
+      list-style: none;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.aw-header {
+  margin-top: 100px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  span {
+    font-size: 22px;
+    color: #aaa5a5;
+    font-weight: bold;
+    margin: 10px;
+
+  }
+}

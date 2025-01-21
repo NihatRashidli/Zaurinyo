@@ -1,0 +1,26 @@
+.hero {
+  background-color: rgb(212, 238, 248);
+  height: 700px;
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+  }
+  .hero-content {
+    text-align: start;
+    h1 {
+      font-size: 60px;
+      font-weight: bold;
+    }
+    p{
+        font-size: 18px;
+    }
+    button{
+        font-size: 18px;
+        border-radius: 3px;
+        padding: 10px 20px;
+    }
+  }
+}
