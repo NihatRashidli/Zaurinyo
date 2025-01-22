@@ -1,6 +1,7 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
+import { deleteBasket } from '../../redux/features/basketSlice';
 
 const Basket = () => {
     const dispatch = useDispatch()
@@ -14,6 +15,7 @@ const Basket = () => {
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
+                        <th>settings    </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,7 +25,12 @@ const Basket = () => {
                                 <td>{item.name}</td>
                                 <td>{item.price}</td>
                                 <td>{item.category}</td>
-                                <td>{item.image}</td>
+                                <td>
+                                    <img src={item.image} alt="" />
+                                </td>
+                                <td>
+                                    <button className='btn btn-danger' onClick={()=> dispatch(deleteBasket(item._id))}>delete</button>
+                                </td>
                             </tr>
                         ))
                     }

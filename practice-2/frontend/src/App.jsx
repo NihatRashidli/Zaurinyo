@@ -7,6 +7,7 @@ import Latest from "./pages/Latest";
 import Blog from "./pages/Blog";
 import Pages from "./pages/Pages";
 import Contact from "./pages/Contact";
+import Basket from "./pages/Basket";
 
 const router = createBrowserRouter([
   {
@@ -27,16 +28,20 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog/>
+        element: <Blog />,
       },
       {
         path: "/Pages",
-        element: <Pages />
+        element: <Pages />,
       },
       {
         path: "/contact",
-        element: <Contact />
-      }
+        element: <Contact />,
+      },
+      {
+        path: "/basket",
+        element: <Basket />,
+      },
     ],
   },
 ]);

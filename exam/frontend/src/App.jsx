@@ -9,6 +9,7 @@ import Shop from './pages/Shop'
 import Latest from './pages/Latest'
 import Notfound from './pages/Notfound'
 import Basket from './pages/basket/Basket'
+import Admin from './pages/Admin'
 
 function App() {
 
@@ -38,6 +39,10 @@ function App() {
         }, {
           path: '/basket',
           element: <Basket />,
+        },
+        {
+          path: '/admin',
+          element: <Admin />,
         }
       ]
     }, {

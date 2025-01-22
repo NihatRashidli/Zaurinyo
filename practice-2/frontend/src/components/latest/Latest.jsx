@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import "./Latest.scss";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchproducts } from "../../redux/features/productSlice";
+import Cards from "../card/Cards";
 
 const Latest = () => {
   const dispatch = useDispatch();
@@ -25,23 +24,12 @@ const Latest = () => {
             <span>Offer</span>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-4">
-            {products && products.length > 0
-              ? products.map((product) => (
-                  <Card style={{ width: "18rem" }} key={product._id}>
-                    <Card.Img variant="top" src={product?.image} />
-                    <Card.Body>
-                      <Card.Title>{product.name}</Card.Title>
-                      <Card.Text>
-                        Xosun Geldi?
-                      </Card.Text>
-                      <Button variant="primary">RR Sahibi Ol</Button>
-                    </Card.Body>
-                  </Card>
-                ))
-              : "Not Found"}
-          </div>
+        <div className=" d-flex justify-content-center">
+          {products && products.length > 0
+            ? products.map((product) => (
+                <Cards product={product} key={product._id} />
+              ))
+            : "Not Found"}
         </div>
       </div>
     </div>

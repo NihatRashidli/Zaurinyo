@@ -28,6 +28,9 @@ const Navbar = () => {
             <li>
               <Link to={'/shop'}>Shop</Link>
             </li>
+            <li>
+              <Link to={'/admin'}>Admin</Link>
+            </li>
             <div className="wrapper">
               <Link to={'/basket'}>
               <FaBasketShopping />

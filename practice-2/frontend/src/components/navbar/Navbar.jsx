@@ -32,7 +32,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="wrapper">
-            <FaShoppingBasket />
+            <Link to={"/basket"}>
+              <FaShoppingBasket />
+            </Link>
           </div>
         </div>
       </div>
