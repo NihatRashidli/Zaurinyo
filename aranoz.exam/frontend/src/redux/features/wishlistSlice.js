@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
 
 const initialState = {
   wishlist: [],
@@ -17,7 +15,11 @@ const wishlistSlice = createSlice({
       if (!existProduct) {
         state.wishlist.push({
           ...action.payload,
+          count: 1
         });
+      } else {
+        existProduct.count += 1;
+
       }
     },
     deleteWishlist: (state, action) => {
@@ -25,8 +27,25 @@ const wishlistSlice = createSlice({
         (item) => item._id !== action.payload._id
       );
     },
+    plusBtn: (state, action) => {
+      const existProduct = state.wishlist.find(
+        (item) => item._id === action.payload._id
+      );
+      if (existProduct) {
+        existProduct.count += 1;
+
+      }
+    }, minusBtn: (state, action) => {
+      const existProduct = state.wishlist.find(
+        (item) => item._id === action.payload._id
+      );
+      if (existProduct.count > 1) {
+        existProduct.count -= 1;
+
+      }
+    }
   },
 });
 
-export const { addWishlist, deleteWishlist } = wishlistSlice.actions;
+export const { addWishlist, deleteWishlist, plusBtn, minusBtn } = wishlistSlice.actions;
 export default wishlistSlice;

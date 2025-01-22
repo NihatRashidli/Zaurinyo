@@ -1,0 +1,22 @@
+.arrivals{
+    .header{
+        h1{
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 2rem;
+        }
+    }
+    .clock{
+        text-align: center;
+        h4{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 2rem;
+        };
+        p{
+            color: red;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
